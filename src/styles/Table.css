@@ -1,0 +1,39 @@
+.container-table {
+  margin: 20px;
+}
+
+input.search {
+  display: block;
+  margin: 10px 0;
+  padding: 8px;
+  width: 100%;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+th,
+td {
+  padding: 10px;
+  text-align: left;
+}
+
+th {
+  background-color: #0000ff;
+  color: white;
+}
+
+tr {
+  border-bottom: 1px solid #ddd;
+}
+
+img {
+  border-radius: 50%;
+}
+
+.avatar {
+  width: 34px;
+  height: 34px;
+}
