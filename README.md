@@ -41,7 +41,7 @@ Clone este repositório utilizando o Git:
 
 ```sh
 $ git clone https://github.com/seu-usuario/desafio-frontend-betalent.git
-$ cd desafio-frontend-betalent
+$ cd desafio-front-end
 ```
 
 ### Passo 2: Instalar Dependências
@@ -75,7 +75,3 @@ A aplicação estará disponível em [http://localhost:3000](http://localhost:30
 Este projeto foi desenvolvido para avaliar minhas habilidades em **React**, **CSS**, e **JavaScript**. Caso tenha algum feedback, sinta-se à vontade para entrar em contato.
 
 Fico à disposição para quaisquer dúvidas ou esclarecimentos.
-
-```
-
-```
