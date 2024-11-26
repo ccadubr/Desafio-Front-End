@@ -18,10 +18,11 @@ const Table = () => {
   }, []);
 
   const formatPhone = useCallback((phone: string) => {
-    const ddd = phone.slice(0, 2);
-    const firstPart = phone.slice(2, 7);
-    const secondPart = phone.slice(7, 11);
-    return `(${ddd}) ${firstPart}-${secondPart}`;
+    const countryCode = phone.slice(0, 2);
+    const ddd = phone.slice(2, 4);
+    const firstPart = phone.slice(4, 9);
+    const secondPart = phone.slice(9);
+    return `+${countryCode} ${ddd} ${firstPart}-${secondPart}`;
   }, []);
 
   const formatted = useCallback(
@@ -72,11 +73,21 @@ const Table = () => {
       <table>
         <thead>
           <tr>
-            <th>FOTO</th>
-            <th>NOME</th>
-            <th className="desktop-only">CARGO</th>
-            <th className="desktop-only">DATA DE ADMISSÃO</th>
-            <th className="desktop-only">TELEFONE</th>
+            <th>
+              <h2>FOTO</h2>
+            </th>
+            <th>
+              <h2>NOME</h2>
+            </th>
+            <th className="desktop-only">
+              <h2>CARGO</h2>
+            </th>
+            <th className="desktop-only">
+              <h2>DATA DE ADMISSÃO</h2>
+            </th>
+            <th className="desktop-only">
+              <h2>TELEFONE</h2>
+            </th>
             <th className="mobile-only">
               <span className="icon-circle"></span>
             </th>
@@ -108,7 +119,9 @@ const Table = () => {
                       className="avatar"
                     />
                   </td>
-                  <td>{employee.name}</td>
+                  <td>
+                    <h3>{employee.name}</h3>
+                  </td>
                   <td className="mobile-only">
                     <button
                       type="button"
@@ -125,35 +138,43 @@ const Table = () => {
                           expandedRows[employee.id] ? ChevronUp : ChevronDown
                         }
                         alt={expandedRows[employee.id] ? 'Fechar' : 'Expandir'}
+                        width={32}
+                        height={32}
                         className="chevron-icon"
                       />
                     </button>
                   </td>
-                  <td className="desktop-only">{employee.job}</td>
-                  <td className="desktop-only">{employee.admission_date}</td>
-                  <td className="desktop-only">{employee.phone}</td>
+                  <td className="desktop-only">
+                    <h3>{employee.job}</h3>
+                  </td>
+                  <td className="desktop-only">
+                    <h3>{employee.admission_date}</h3>
+                  </td>
+                  <td className="desktop-only">
+                    <h3>{employee.phone}</h3>
+                  </td>
                 </tr>
 
                 {expandedRows[employee.id] && (
                   <tr>
                     <td colSpan={6}>
                       <div className="employee-info">
-                        <p>
-                          <strong>Cargo:</strong>
-                        </p>
-                        <p>{employee.job}</p>
+                        <h2>
+                          <strong>Cargo</strong>
+                        </h2>
+                        <h3>{employee.job}</h3>
                       </div>
                       <div className="employee-info">
-                        <p>
-                          <strong>Data de admissão:</strong>
-                        </p>
-                        <p>{employee.admission_date}</p>
+                        <h2>
+                          <strong>Data de admissão</strong>
+                        </h2>
+                        <h3>{employee.admission_date}</h3>
                       </div>
                       <div className="employee-info">
-                        <p>
-                          <strong>Telefone:</strong>
-                        </p>
-                        <p>{employee.phone}</p>
+                        <h2>
+                          <strong>Telefone</strong>
+                        </h2>
+                        <h3>{employee.phone}</h3>
                       </div>
                     </td>
                   </tr>
