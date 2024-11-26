@@ -158,7 +158,7 @@ const Table = () => {
                 </tr>
 
                 {expandedRows[employee.id] && (
-                  <tr>
+                  <tr className="mobile-only">
                     <td colSpan={6}>
                       <div className="employee-info">
                         <h2>

@@ -112,11 +112,6 @@ button.expand-button {
 }
 
 .mobile-only {
-  display: table-cell;
-  width: 100%;
-  height: 100%;
-  justify-content: end;
-  align-items: center;
   text-align: right;
 }
 
