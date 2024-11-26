@@ -104,9 +104,6 @@ const Table = () => {
                 search === '' ||
                 employee.name.toLowerCase().includes(search.toLowerCase()) ||
                 employee.job.toLowerCase().includes(search.toLowerCase()) ||
-                employee.admission_date
-                  .toLowerCase()
-                  .includes(search.toLowerCase()) ||
                 employee.phone.toLowerCase().includes(search.toLowerCase())
               );
             })
