@@ -1,6 +1,6 @@
 # Desafio FrontEnd - BeTalent
 
-Este repositório contém a solução do Desafio FrontEnd da BeTalent, desenvolvido para candidatos em processo seletivo. O objetivo deste projeto é implementar uma aplicação em React.js para visualizar uma tabela de dados de funcionários, consumindo uma API simulada utilizando `json-server`. A visualização é responsiva e inclui funcionalidades de pesquisa.
+Este repositório contém a solução do Desafio FrontEnd da BeTalent. O objetivo deste projeto é implementar uma aplicação em React.js para visualizar uma tabela de dados de funcionários, consumindo uma API simulada utilizando `json-server`. A visualização é responsiva e inclui funcionalidades de pesquisa.
 
 ## Sobre o Projeto
 
