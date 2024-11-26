@@ -40,7 +40,7 @@ Para rodar o projeto localmente, você precisará dos seguintes programas instal
 Clone este repositório utilizando o Git:
 
 ```sh
-$ git clone https://github.com/seu-usuario/desafio-frontend-betalent.git
+$ git clone git@github.com:ccadubr/Desafio-Front-End.git
 $ cd desafio-front-end
 ```
 
