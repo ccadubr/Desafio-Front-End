@@ -58,7 +58,9 @@ const Table = () => {
   return (
     <main className="container">
       <section className="title">
-        <h1>Funcionários</h1>
+        <h1>
+          <strong>Funcionários</strong>
+        </h1>
         <InputSearch
           type="text"
           id="search"
