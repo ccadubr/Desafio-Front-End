@@ -1,46 +1,81 @@
-# Getting Started with Create React App
+# Desafio FrontEnd - BeTalent
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Este repositório contém a solução do Desafio FrontEnd da BeTalent, desenvolvido para candidatos em processo seletivo. O objetivo deste projeto é implementar uma aplicação em React.js para visualizar uma tabela de dados de funcionários, consumindo uma API simulada utilizando `json-server`. A visualização é responsiva e inclui funcionalidades de pesquisa.
 
-## Available Scripts
+## Sobre o Projeto
 
-In the project directory, you can run:
+O projeto consiste em criar uma tabela responsiva para exibir dados de funcionários. Cada linha da tabela deve conter:
 
-### `npm start`
+- Foto do funcionário;
+- Nome;
+- Cargo;
+- Data de admissão;
+- Telefone.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+A aplicação também conta com um campo de pesquisa para filtrar os dados por **nome**, **cargo**, ou **telefone**. Os dados são fornecidos por uma API simulada, que é configurada com o `json-server`.
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+## Layout
 
-### `npm test`
+A interface responsiva foi desenvolvida para garantir uma boa experiência em dispositivos móveis e desktops. O mockup do projeto está disponível no Figma e segue padrões visuais que garantem consistência e clareza.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## Tecnologias Utilizadas
 
-### `npm run build`
+- **React.js**: Framework principal para construção da aplicação.
+- **json-server**: Ferramenta utilizada para simular uma API e fornecer dados à aplicação.
+- **CSS**: Estilização da interface, garantindo responsividade e design alinhado ao mockup.
+- **JavaScript/TypeScript** (opcional): Foi dada preferência ao uso de TypeScript para melhorar a tipagem e segurança do código.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## Pré-requisitos
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+Para rodar o projeto localmente, você precisará dos seguintes programas instalados em sua máquina:
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+- **Node.js** (versão LTS recomendada)
+- **NPM** ou **Yarn** (gerenciador de pacotes)
+- **Git** (para clonar o repositório)
 
-### `npm run eject`
+## Como Rodar o Projeto
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+### Passo 1: Clonar o Repositório
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+Clone este repositório utilizando o Git:
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+```sh
+$ git clone https://github.com/seu-usuario/desafio-frontend-betalent.git
+$ cd desafio-frontend-betalent
+```
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+### Passo 2: Instalar Dependências
 
-## Learn More
+Utilize o comando abaixo para instalar as dependências do projeto:
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+```sh
+$ npm install
+```
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+### Passo 3: Rodar o Projeto
+
+O servidor da API simulada já foi configurado para rodar automaticamente quando a aplicação é iniciada. Basta utilizar o comando abaixo:
+
+```sh
+$ npm start
+```
+
+O comando acima rodará o `json-server` na porta 3001 e iniciará a aplicação React em seguida.
+
+A aplicação estará disponível em [http://localhost:3000](http://localhost:3000).
+
+## Funcionalidades
+
+- **Tabela de Funcionários**: Exibe informações sobre os funcionários em uma tabela responsiva.
+- **Pesquisa Dinâmica**: Campo de pesquisa para filtrar dados da tabela por nome, cargo ou telefone.
+- **Formatação de Dados**: Datas e números de telefone são formatados no front-end.
+
+## Considerações Finais
+
+Este projeto foi desenvolvido para avaliar minhas habilidades em **React**, **CSS**, e **JavaScript**. Caso tenha algum feedback, sinta-se à vontade para entrar em contato.
+
+Fico à disposição para quaisquer dúvidas ou esclarecimentos.
+
+```
+
+```
