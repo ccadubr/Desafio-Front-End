@@ -78,7 +78,7 @@ const Table = () => {
             <th>
               <h2>FOTO</h2>
             </th>
-            <th>
+            <th className="name-column">
               <h2>NOME</h2>
             </th>
             <th className="desktop-only">
@@ -91,7 +91,9 @@ const Table = () => {
               <h2>TELEFONE</h2>
             </th>
             <th className="mobile-only">
-              <span className="icon-circle"></span>
+              <div className="container-circle">
+                <span className="icon-circle"></span>
+              </div>
             </th>
           </tr>
         </thead>
