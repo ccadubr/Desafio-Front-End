@@ -108,7 +108,7 @@ const Table = () => {
               );
             })
             .map((employee: Employee) => (
-              <>
+              <React.Fragment key={employee.id}>
                 <tr
                   className={`${expandedRows[employee.id] ? 'expanded' : ''}`}
                   key={employee.id}
@@ -180,7 +180,7 @@ const Table = () => {
                     </td>
                   </tr>
                 )}
-              </>
+              </React.Fragment>
             ))}
         </tbody>
       </table>
