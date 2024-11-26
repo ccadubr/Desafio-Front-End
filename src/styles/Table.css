@@ -52,6 +52,10 @@ tr {
   border-bottom: 1px solid #ddd;
 }
 
+tr.expanded {
+  border: 0;
+}
+
 img {
   border-radius: 50%;
 }
@@ -66,7 +70,7 @@ img {
 }
 
 .icon-circle {
-  background-color: #FFFFFF;
+  background-color: #ffffff;
   border: none;
   width: 8px;
   height: 8px;
@@ -74,14 +78,46 @@ img {
   display: flex;
   align-items: center;
   justify-content: center;
+  margin-left: auto;
 }
 
 .chevron-icon {
   color: #0000ff;
 }
 
+.employee-info {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px dashed #ccc;
+}
+
+.employee-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.employee-details {
+  border-top: 1px dashed #ccc;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+button.expand-button {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}
+
 .mobile-only {
   display: table-cell;
+  width: 100%;
+  height: 100%;
+  justify-content: end;
+  align-items: center;
+  text-align: right;
 }
 
 @media (min-width: 768px) {
@@ -92,11 +128,9 @@ img {
   .title {
     display: flex;
     flex-direction: row;
+    justify-content: space-between;
+    gap: 0.25rem;
     align-items: center;
-  }
-
-  input.search {
-    width: 287px;
   }
 
   .icon-circle {
@@ -106,5 +140,4 @@ img {
   .mobile-only {
     display: none;
   }
-
 }
